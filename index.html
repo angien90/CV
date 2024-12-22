@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV för Angelica Nylander</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Här kan man läsa angelicas CV. Alltså få en förståelse kring vilken kunskap och erfarenhet hon bär på och vad hon kan hjälpa ert företag med.">
 
     <meta property="og:url" content="file:///C:/Users/angel/Documents/GitHub/fed24d-html-css-inlamningsuppgift1-angien90/index.html"><meta property="og:title" content="Front End Developer">
@@ -13,6 +13,8 @@
     <meta property="og:description" content="Här sammanställs Angelica Nylanders utbildningar, erfarenheter, färdigheter och meriter">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/99916077?v=4">
   
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+
     <link rel="icon" href="img/angelica_nylander.jpg" sizes="any">
     <link rel="icon" href="img/angelica_nylander.jpg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/angelica_nylander.jpg">
@@ -35,11 +37,8 @@
 
 <body>
     <aside>
-        <img class="profilepicture" src="img/angelica_nylander.jpg" alt="Profilbild på Angelica Nylander" width="896" height="1073">
-        <a href="mailto:angelica.nylander@outlook.com" target="_blank"> angelica.nylander@outlook.com</a> 
-        <a href="tel:+46732096320">073 209 63 20</a> 
-        <button class="utskrifts-knapp" onclick="window.print()">Skriv ut CV</button>
-
+        <img class="profilepicture" src="img/angelica_nylander.jpg" alt="Profilbild på Angelica Nylander" width="300">
+        
         <h2 class="heading">Kort om mig</h2> 
         <p>Jag är en glas och positiv theh som bor ihop med min sambo och vår fyrbenta vän i vårt radhus i Göteborg. Som person är jag strukturerad och gillar ordning och reda runt omkring mig. Jag gillar även att leverera resultat och får lätt stor yrkesstolthet till mina uppdrag. Utveckling är en del av min passion och jag ser därför nya kunskaper som en intressant utmaning och jag har lätt för att lära mig nya system och program. På fritiden umgås jag gärna med nära och kära, går långa promenader i naturen, fånga ögonblick på bild och låta kreativiteten flöda genom olika pysselprojekt. Även träning är en stor del av min vardag.</p>
         
@@ -77,79 +76,77 @@
             <li>Egenföretagare</li>
         </ul>
         
-        <p>Referenser lämnas på begäran</p>
+        <p class="reference">Referenser lämnas på begäran</p>
 
-        <blockquote cite="https://medium.com/agileactors/quotes-only-programmers-will-get-532ff1a36c4f">
-            <p>“A good programmer is someone who always looks both ways before crossing a one-way street.”</p>
-        </blockquote>
-            <p>-Doug Linder</p>  
+        <button class="utskrifts-knapp" onclick="window.print()">Skriv ut CV</button>
+
     </aside>
 
     <main>
         <h1>Angelica Nylander</h1>
         <h2>Frontend Developer</h2>
         
-        <h2 class="heading">Arbetslivserfarenhet</h2>
+        <h3 class="heading">Arbetslivserfarenhet</h3>
         <hr>
-        <h3 class="subheading">Ägare & anställd | Ad Prosperitas | 2013-Idag</h3>
+        <h4 class="subheading">Ägare & anställd | Ad Prosperitas | 2013-Idag</h4>
         <p class="text">Ad Prosperitas är mitt privatägda konsultföretag som är specialiserat på kvalitets-, miljö- och arbetsmiljöfrågor men som även erbjuder kunder hjälp med andra tekniska frågor.</p>
         
-        <h3 class="subheading">Kvalitets- & miljösamordnare | Idnet | 2021-2024</h3>
+        <h4 class="subheading">Kvalitets- & miljösamordnare | Idnet | 2021-2024</h4>
         <p class="text">Idnet skapar hållbar tillväxt genom att digitalisera processer för butik och lager. Som kvalitets- och miljösamordnare hade jag ansvar för att underhålla och vidareutveckla Idnets certifikat mot ISO 9001:2015 och ISO 14001:2015. I rollen byddge jag även ett eget ledningssystem och intranät i Microsoft SharePoint både för Idnet men också dotterbolagen i koncernen. Det innebar att jag både blev utvecklare av systemet, utbildare och hade även en stor roll inom arbetsmiljö då mycket kopplat till trivsel och företagskulturen var kopplat till intranätet.</p>
 
-        <h3 class="subheading">Databasadministratör | Idnet | 2019-2021</h3>
+        <h4 class="subheading">Databasadministratör | Idnet | 2019-2021</h4>
         <p class="text">Idnet skapar hållbar tillväxt genom att digitalisera processer för butik och lager. I min roll som databasadministratör hade jag ansvar för den dagliga driften i affärsledningssystemet Pyramid Business Studio samt att stötta, utbilda, utveckla och anpassa systemet för att uppfylla olika intressenters krav och förväntningar.</p>
          
-        <h3 class="subheading">Inköp och kvalitetssamordnare | Alnova Balkongsystem | 2014-2018</h3>
+        <h4 class="subheading">Inköp och kvalitetssamordnare | Alnova Balkongsystem | 2014-2018</h4>
         <p class="text">Alnova tillverkar och marknadsför egenutvecklade balkongsystem. Under min tid hos Alnova införde jag bland annat ISO 9001:2008 och EN 1090:1 samt underhållide dessa certifikat. Jag hade även ansvar för övergången till den nya standarden ISO 9001:2015. Ett annat viktigt projekt var att införa ett helt nytt affärledningssystem där jag bland annat hade delansvar för projektet. Därefter hade jag dagligen ansvar för underhåll och vidareutveckling av i stort sett hela systemet. Jag arbetade även dagligen med inköp av projektbundet material med ansvar för bland annat glas och andra täckningsmaterial i våra system. Detta innefattade återkommande leverantörskontakter och leveransbevakningar. Jag bedrev även ett projekt där jag utvecklade samt byggde upp företagets nya hemsida.</p>
         
-        <h3 class="subheading">Praktik | Alnova Balkongsystem | 2014</h3>
+        <h4 class="subheading">Praktik | Alnova Balkongsystem | 2014</h4>
         <p class="text"> Under min praktik som varade i 13 veckor fick jag bland annat se över och uppdatera deras projektplaneringsverktyg med huvudsyfte att förenkla och säkra upp processen. Jag fick även leda projektet som omfattade CE-märkning av företagets aluminiumkonstruktioner. Delar av min praktik fick jag även arbetsleda en annan praktikant.</p>
     
-        <h3 class="subheading">Praktik | Hedlunds pappersindustri | 2013</h3>
+        <h4 class="subheading">Praktik | Hedlunds pappersindustri | 2013</h4>
         <p class="text">Hedlunds tillverkar och säljer presentartiklar i form av jul- och presentpapper, band, etiketter, presentpåsar etc. Under min praktik som varade i 13 veckor genomförde jag en gap-analys på verksamhetsledningssystemet som omfattade ISO 14001, OHSAS 18001, ISO 9001 samt IWAY och QWAY. Jag utförde även en internrevision samt identifierade miljörisker samt miljö och arbetsmiljöaspekter.</p>
    
-        <h3 class="subheading">Praktik | Ballograf | 2011 & 2012</h3>
+        <h4 class="subheading">Praktik | Ballograf | 2011 & 2012</h4>
         <p class="text">Ballograf tillverkar de välkända kulspetspennorna som är erkända för sin svenska kvalité och sin skrivkänsla. Praktiken var sammanlagt 15 veckor och mitt uppdrag var att dokumentera deras kvalitetsarbete, ta fram en kvalitets- och miljöpolicy samt ta fram TAK-värdet på två av deras produktionslinjer.</p>
    
-        <h3 class="subheading">Praktik | Elicit | 2010 & 2011</h3>
+        <h4 class="subheading">Praktik | Elicit | 2010 & 2011</h3>
         <p class="text">Elicit är ett konsultföretag som utvecklar Lean-baserade IT-lösningar. Hos Elicit har jag sammanlagt arbetat 10 veckor där jag bland annat fick göra en värdeflödesanalys. Praktiken har även inneburit kontakter och uppdrag åt deras kunder. Där fick jag bland annat fick granska och förbättra deras avvikelsehantering, se över hur de kan gå vidare med sin Lean implementering samt se över deras mätmetoder.</p>
    
-        <h3 class="subheading">Teknisk assistent | Consilium | 2006-2013</h3>
+        <h4 class="subheading">Teknisk assistent | Consilium | 2006-2013</h4>
         <p class="text">Consilium utvecklar och marknadsför produkter och system för säkerhet, miljö och navigation. Hos Consilium har jag i olika omfattningar arbetat med enklare produktutveckling i 6 år och även som teknisk assistent på deltid. Under denna tid har jag även vid olika tillfällen arbetet med ordermottagning och registrering.</p>
    
-        <h2 class="heading">Utbildning</h2>
+        <h3 class="heading">Utbildning</h3>
         <hr>
-        <h3 class="subheading">Front End Developer | Medieinstitutet | 2024-2026</h3>
+        <h4 class="subheading">Front End Developer | Medieinstitutet | 2024-2026</h4>
         <p class="text">Utbildningen ger en bred kunskap inom webbproduktion, allt från tanke till färdig webbplats för olika plattformar och enheter.</p>
         
-        <h3 class="subheading">Kvalitets- och miljöledare | Folkuniversitetet | 2012-2014</h3>
+        <h4 class="subheading">Kvalitets- och miljöledare | Folkuniversitetet | 2012-2014</h4>
         <p class="text">Utbildningen är en så kallad YH-utbildning och ger ämneskunskaper och färdigheter för att arbeta med förändringsarbete inom kvalitet, miljö och arbetsmiljö oavsett bransch.</p>
         
-        <h3 class="subheading">Produktionsutveckling | Göteborgs Tekniska Collage | 2010-2012</h3>
+        <h4 class="subheading">Produktionsutveckling | Göteborgs Tekniska Collage | 2010-2012</h4>
         <p class="text">Utbildningen ger en gedigen kunskap i att förbättra och utveckla produktionsprocesser för att skapa en hållbar utveckling för industrin. Utbildningen är en så kallad YH-utbildning och innefattar både teoretiska och praktiska övningar.</p>
         
-        <h3 class="subheading">Teknik | Frölundagymnasiet | 2006-2008</h3>
+        <h4 class="subheading">Teknik | Frölundagymnasiet | 2006-2008</h4>
         <p class="text">Utbildningen ger kunskap i att hantera och analysera allt från befintlig till nyutvecklad teknik.</p>
         
-        <h2 class="heading">Diplom</h2>
+        <h4 class="heading">Diplom</h4>
         <hr>
-        <h3 class="subheading">Microsoft SharePoint Online | 2022</h3>
+        <h5 class="subheading">Microsoft SharePoint Online | 2022</h5>
         <p class="text">Kursen har gett mig grundläggande kunskap och förståelse kring hur man som administratör och användare arbetar smart i Microsoft SharePoint Online.</p>
         
-        <h3 class="subheading">5 Day Coding Challenge | 2022</h3>
+        <h4 class="subheading">5 Day Coding Challenge | 2022</h4>
         <p class="text">Kursen har gett mig grundläggande kunskap och förståelse i språken HTML, CSS och JavaScript.</p>
         
-        <h3 class="subheading">BAM - Bättre arbetsmiljö | 2021</h3>
+        <h4 class="subheading">BAM - Bättre arbetsmiljö | 2021</h4>
         <p class="text">Kursen har gett mig kunskap kring att samverka i arbetsmiljöfrågor, undersöka och förebygga risker i arbetsmiljö, förstå hur bra arbetsmiljö bidrar till verksamheten samt veta var man söker den information som behövs för det dagliga arbetsmiljöarbetet.</p>
         
-        <h3 class="subheading">UA-akademins grundkurs | 2021</h3>
+        <h4 class="subheading">UA-akademins grundkurs | 2021</h4>
         <p class="text">Via denna genomförd grundkurs har jag fått ett grundläggande förståelse i aktiemarknaden, fonder och pensionssparande.</p>
         
-        <h3 class="subheading">Entreprenadjuridik 1 | 2017</h3>
+        <h4 class="subheading">Entreprenadjuridik 1 | 2017</h4>
         <p class="text">Genom denna kurs har jag fått grundläggande entreprenadjuridiska kunskaper för att kunna bevaka företags rättigheter och skyldigheter. Kursens tyngdpunkt låg på en grundläggande genomgång av de viktigaste bestämmelserna i AB 04 och ABT 06 samt relevanta bestämmelser i underentreprenadavtalen AB-U 07 och ABT-U 07.</p>
         
-        <h3 class="subheading">SAM - Sekvensbaserad Aktivitets- och Metodanalys | 2011</h3>
+        <h4 class="subheading">SAM - Sekvensbaserad Aktivitets- och Metodanalys | 2011</h4>
         <p class="text">Kursen gav mig en färdighet i det gemensamma verktyg som används av både produktionstekniker, operatörer och specialister med funktionen att kunna dokumentera såväl arbetsmetod som att analysera tidsåtgång.</p>
     
         <h2>Kontaktformulär</h2>
