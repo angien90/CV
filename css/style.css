@@ -1,13 +1,16 @@
 body {
   font-family: 'El Messiri', sans-serif;
+  display: flex; /* Gör så att aside och main ligger bredvid varandra */
+  min-height: 100vh; /* Se till att body täcker hela skärmhöjden */
+  margin: 0; /* Ta bort eventuell margin från body */
 }
 
 aside {
-  float: left; 
-  width: 250px; 
+  width: 30%; 
   background-color: #f4f4f4; 
   padding: 10px; 
   border-right: 10px double white;
+  box-sizing: border-box;
 }
 
 aside img {
@@ -17,19 +20,42 @@ aside img {
 
 aside h2 {
   text-align: center;
+  margin-bottom: 0px;
+}
+
+aside p {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none; /* Tar bort punkterna från listan */
+  padding: 0; /* Tar bort eventuell padding som kan orsakas av ul-elementet */
+  margin: 0; /* Tar bort eventuell margin */
+  text-align: center; /* Centrerar innehållet i ul */
+}
+
+ul li {
+  display: block; /* Gör varje li till ett inline-block för att placera dem horisontellt */
+  margin: 10px; /* Lägg till lite mellanrum mellan listpunkterna */
 }
 
 aside button {
   display: block; 
   margin: 20px auto;
+  background-color: #e0e0e0;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 40px;
 }
 
 main {
-  margin-left: 270px; 
+  flex-grow: 1;
   background-color: #e0e0e0; 
   padding: 10px; 
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  width: 400px;
 }
 
 main h1 {
@@ -57,3 +83,45 @@ main h4 {
 main p {
   margin-top: 10px;
 }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;  
+  align-items: flex-end;          
+  padding: 0px;
+  background-color: #f4f4f4;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 10px double white;
+  height: 90px;  
+  display: block; 
+  text-align: center;                
+}
+
+footer .reference {
+  color: black;
+  width: 100%;
+  text-align: center; 
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: inline-block; 
+  margin: 5px;
+}
+
+/* Kontaktikoner */
+footer img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;                
+}
+
+
