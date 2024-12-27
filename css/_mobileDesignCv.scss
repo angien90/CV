@@ -1,7 +1,7 @@
 body {
   font-family: 'El Messiri', sans-serif;
   display: flex; 
-  flex-direction: column;
+  flex-direction: column-reverse;
   min-height: 100vh; 
   margin: 0; 
   }
@@ -11,8 +11,8 @@ body {
     padding: 10px; 
     border-right: 4px solid white;
     border-left: 4px solid white;
-    border-top: 4px solid white;
-    border-bottom: 10px double white;
+    border-top: 10px double white;
+    margin-bottom: 60px;
   }
   
   aside img {
@@ -50,6 +50,16 @@ body {
     margin: 10px; 
     margin-top: 5px;
   }
+
+  .reference {
+    color: black;
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;;
+  }
   
   aside button {
     display: block;
@@ -74,8 +84,9 @@ body {
   .buttons {
     display: flex;
     flex-direction: row;
-    padding-left: 30px;
-    padding-right: 30px;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
     gap: 10px;
   }
   
@@ -88,7 +99,7 @@ body {
     box-sizing: border-box;
     border-right: 4px solid white;
     border-left: 4px solid white;
-    margin-bottom: 90px;
+    border-top: 4px solid white;
   }
   
   main h1 {
@@ -128,18 +139,13 @@ body {
     bottom: 0;
     width: 100%;
     border-top: 10px double white;
-    height: 90px;  
+    height: 50px;  
     display: block; 
-    text-align: center;                
-  }
-  
-  footer .reference {
-    color: black;
-    width: 100%;
-    text-align: center; 
-    margin-bottom: 10px;
-    font-weight: bold;
-    margin-bottom: 5px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 4px solid white; 
+    border-left: 4px solid white;       
+    border-right: 4px solid white;                
   }
   
   footer a {
