@@ -1,0 +1,163 @@
+body {
+    font-family: 'El Messiri', sans-serif;
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0; 
+  }
+  
+  aside {
+    background-color: #f4f4f4;
+    padding: 10px;  
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+    border-bottom: 10px double white;
+  }
+  
+  aside img {
+    width: 35%;
+    border-radius: 50%;
+    display: block; 
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  aside h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+  }
+  
+  aside h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1em;
+  }
+
+  .contact-info {
+    text-transform: uppercase;
+  }
+
+  aside h3 {
+    padding-left: 40px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 1em;
+  }
+  
+  aside p {
+    padding-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1em;
+  }
+  
+  aside button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px; 
+    background-color: #e0e0e0;
+    border: none; 
+    border-radius: 5px; 
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  aside button:hover {
+    background-color: #ccc;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 10px;
+  }
+  
+  main {
+    flex-grow: 1;
+    background-color: #e0e0e0; 
+    padding: 10px; 
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    margin-bottom: 70px;
+  }
+  
+  main h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  main h3 {
+    margin-top: 0px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+   
+  main p {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  main a {
+    color: black;
+    font-weight: bold;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: flex-end;          
+    padding: 0px;
+    background-color: #f4f4f4;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    border-top: 10px double white;
+    height: 50px;  
+    display: block; 
+    text-align: center;        
+    padding-top: 10px;
+    border-bottom: 4px solid white; 
+    border-left: 4px solid white;       
+    border-right: 4px solid white;
+  }
+  
+  footer .reference {
+    color: black;
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: inline-block; 
+    margin: 5px;
+  }
+  
+  /* Kontaktikoner */
+  footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;                
+  }

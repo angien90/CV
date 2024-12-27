@@ -1,0 +1,11 @@
+@import 'resetDesign';
+
+@import 'mobileDesignPersonligtBrev';
+
+@media screen and (min-width:1024px) {
+    @import 'tabletDesignPersonligtBrev';
+}
+
+@media screen and (min-width:1366px) {
+    @import 'desktopDesignPersonligtBrev';
+}
