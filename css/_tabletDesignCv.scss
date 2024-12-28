@@ -14,7 +14,6 @@ body {
     box-sizing: border-box;
     border-left: 4px solid white;
     border-top: 4px solid white;
-    margin-bottom: 70px;
   }
   
   aside img {
@@ -64,7 +63,7 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 20px;
     transition: background-color 0.3s ease; 
   }
   
@@ -122,7 +121,6 @@ body {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    border-top: 10px double white;
     height: 50px;  
     display: block; 
     text-align: center;        

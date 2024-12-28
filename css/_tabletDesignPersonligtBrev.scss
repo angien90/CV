@@ -59,7 +59,7 @@ body {
   
   aside button {
     display: block;
-    margin: 20px auto;
+    margin: 20px;
     padding: 10px 20px; 
     background-color: #e0e0e0;
     border: none; 
@@ -68,8 +68,7 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 80px;
-    margin-bottom: 0px;
+    margin-top: 70px;
     transition: background-color 0.3s ease; 
   }
   
@@ -77,14 +76,6 @@ body {
     background-color: #ccc;
   }
 
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    padding-left: 30px;
-    padding-right: 30px;
-    gap: 10px;
-  }
-  
   main {
     flex-grow: 1;
     background-color: #e0e0e0; 
