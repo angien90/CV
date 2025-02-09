@@ -1,153 +1,57 @@
 body {
-    font-family: 'El Messiri', sans-serif;
-    display: flex; 
-    flex-direction: row;
-    min-height: 100vh; 
-    margin: 0; 
+    flex-direction: row; 
   }
   
   aside {
     width: 30%; 
-    background-color: #f4f4f4; 
-    padding: 10px; 
     border-right: 10px double white;
     box-sizing: border-box;
-    border-left: 4px solid white;
-    border-top: 4px solid white;
-    margin-bottom: 70px;
-  }
-  
-  aside img {
-    width: 35%;
-    border-radius: 50%;
-    display: block; 
-    margin: 0 auto;
-  }
-
-  aside h1 {
-    text-align: center;
-    margin-bottom: 0px;
-    font-size: 2.5em;
-    margin-top: 20px;
+    margin-bottom: 60px;
   }
   
   aside h2 {
-    text-align: center;
     margin-top: 50px;
-    margin-bottom: 0px;
-    font-size: 2em;
-  }
-
-  .contact-info {
-    text-transform: uppercase;
-  }
-
-  aside h3 {
-    padding-left: 20px;
-    margin-bottom: 0px;
-    margin-top: 20px;
-    font-size: 1.5em;;
+    font-size: 3em;
   }
   
   aside p {
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-size: 1.2em;
   }
   
   aside button {
-    display: block;
-    margin: 20px;
-    padding: 10px 20px; 
-    background-color: #e0e0e0;
-    border: none; 
-    border-radius: 5px; 
-    color: #333;
-    font-size: 1.2em;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 70px;
-    transition: background-color 0.3s ease; 
-  }
-  
-  aside button:hover {
-    background-color: #ccc;
+    font-size: 1.1em;
+    width: 200px; 
   }
 
   main {
-    flex-grow: 1;
-    background-color: #e0e0e0; 
-    padding: 10px; 
-    padding-left: 40px;
-    padding-right: 40px;
-    box-sizing: border-box;
     width: 400px;
-    border-right: 4px solid white;
     border-top: 4px solid white;
     margin-bottom: 70px;
     border-left: 0px;
   }
   
   main h2 {
-    font-size: 2.5em;
-    text-align: center;
+    font-size: 3em;
     margin-bottom: 0px;
-    margin-top: 40px;
   }
 
   main h3 {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 2.5em;
-    text-align: center;
   }
    
   main p {
-    margin-top: 0px;
-    margin-bottom: 40px;
     font-size: 1.2em;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  main a {
-    color: black;
-    font-weight: bold;
   }
   
   footer {
-    display: flex;
     align-items: flex-end;          
-    padding: 0px;
-    background-color: #f4f4f4;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    border-top: 10px double white;
-    height: 50px;  
-    display: block; 
-    text-align: center;        
-    padding-top: 10px;
-    border-bottom: 4px solid white; 
-    border-left: 4px solid white;       
-    border-right: 4px solid white;
+    height: 50px; 
   }
   
-  footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-    display: inline-block; 
-    margin: 5px;
-  }
-  
-  /* Kontaktikoner */
   footer img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px; 
     margin-left: 40px;
     margin-right: 40px;          
   }

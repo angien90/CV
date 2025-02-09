@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personligt brev</title>
-    <link rel="stylesheet" href="css/personligt_brev.css">
     <meta name="description" content="Här kan man läsa Angelicas personliga brev.">
 
+    <link rel="stylesheet" href="css/personligt_brev.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    
     <meta property="og:url" content="file:///C:/Users/angel/Documents/GitHub/fed24d-html-css-inlamningsuppgift1-angien90/personligt_brev.html"><meta property="og:title" content="Front End Developer">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Angelica Nylanders Personliga brev">
@@ -36,6 +38,12 @@
 
 <body>
     <aside>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>            
+        </div>
         <img class="profilepicture" src="img/angelica_nylander.jpg" alt="Profilbild på Angelica Nylander" width="300">
         <br>
         <h1 class="heading">Angelica Nylander</h1>
@@ -56,8 +64,6 @@
     </aside>
 
     <main>
-        <br>
-        <br>
         <h2>Ansökan om praktikplats</h2>
         <h3>Frontend Developer</h3>
         <br>
@@ -69,11 +75,24 @@
     </main>
 
     <footer>
-        <a href="tel:+46732096320"><img src="img/phone-fill.png" alt="Telefon"></a>
-        <a href="mailto:angelica.nylander@medieinstitutet.se"><img src="img/mail-open-fill.png" alt="E-post"></a>
-        <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank"><img src="img/linkedin-box-fill.png" alt="LinkedIn"></a>
-        <a href="https://github.com/angien90" target="_blank"><img src="img/github-fill.png" alt="GitHub"></a>
+        <a href="tel:+46732096320">
+            <img src="img/phone-fill.png" alt="Telefon">
+            <span class="tooltip">Ring mig på 0732-09 63 20</span>
+        </a>
+        <a href="mailto:angelica.nylander@medieinstitutet.se">
+            <img src="img/mail-open-fill.png" alt="E-post">
+            <span class="tooltip">Skicka e-post</span>
+        </a>
+        <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank">
+            <img src="img/linkedin-box-fill.png" alt="LinkedIn">
+            <span class="tooltip">Besök min LinkedIn</span>
+        </a>
+        <a href="https://github.com/angien90" target="_blank">
+            <img src="img/github-fill.png" alt="GitHub">
+            <span class="tooltip">Besök min GitHub</span>
+        </a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
