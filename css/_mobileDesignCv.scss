@@ -3,9 +3,111 @@ body {
   display: flex; 
   flex-direction: column;
   min-height: 100vh; 
-  margin: 0; 
+  margin: 0;
+  transition: background-color 0.5s, color 0.5s; 
+  }
+
+  /* Mörkt läge */
+  body.light-mode aside {
+    background-color: #f4f4f4; 
+    color: black;
+  }
+
+  body.light-mode main {
+    background-color: #e0e0e0;
+    color: black;
+  }
+
+  
+  body.dark-mode aside {
+    background-color: #333;
+    color: white;
+  }
+
+  body.dark-mode main {
+      background: #333;
+      color: white;
+  }
+
+  body.dark-mode footer {
+    background: #333;
+      color: white;
   }
   
+  body.light-mode a img {
+    filter: invert(0%) sepia(100%) hue-rotate(180deg); /* Exempel: normal färg */
+}
+
+body.dark-mode a img {
+    filter: invert(100%); /* Exempel: vit ikon i mörkt läge */
+}
+
+  .theme-switch-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+  .theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 44px;
+  }
+
+  .theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    transition: 0.4s;
+    border-radius: 44px;
+    width: 80px;
+    height: 44px;
+  }
+
+  .slider:hover {
+    box-shadow: 0 0 20px gray;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 36px;
+    width: 36px;
+    left: 4px;
+    bottom: 4px;
+    background-image: url('/dark_mode_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg') !important;
+    transition: 0.4s;
+    border-radius: 50%;
+    background-size: cover;
+  }
+
+  input:checked + .slider {
+    background-color: gray;
+  }
+
+  input:checked + .slider:hover {
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(36px);
+    background-image: url('/light_mode_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg') !important;
+    background-size: cover;
+  }
+ 
+  /* --- */
   aside {
     background-color: #f4f4f4; 
     padding: 10px; 
@@ -13,15 +115,19 @@ body {
     border-left: 4px solid white;
     border-top: 4px solid white;
     border-bottom: 10px double white;
+    margin-bottom: 60px;
+    flex: 1;
   }
   
   aside img {
-    width: 35%;
+    width: 50%;
+    max-width: 200px;
     border-radius: 50%;
-    display: block; 
-    margin: 0 auto;
-    margin-top: 10px;
-  }
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #ddd;
+}
+
   
   aside h2 {
     text-align: center;
@@ -43,6 +149,7 @@ body {
     padding: 0; 
     margin: 0; 
     text-align: center; 
+    line-height: 1.6;
   }
   
   ul li {
@@ -52,13 +159,12 @@ body {
   }
 
   .reference {
-    color: black;
     width: 100%;
     text-align: center; 
     margin-bottom: 10px;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 1.2em;;
+    font-size: 1.2em;
   }
 
   aside a {
@@ -88,11 +194,19 @@ body {
   .buttons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    gap: 10px;
-  }
+    gap: 5px;
+    justify-content: center; 
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+  .buttons button {
+    margin: 0 30px; 
+}
+
+button {
+  width: 150px;
+}
   
   main {
     flex-grow: 1;
@@ -104,8 +218,9 @@ body {
     border-right: 4px solid white;
     border-left: 4px solid white;
     margin-bottom: 60px;
+    flex: 1;
   }
-  
+
   main h1 {
     margin-bottom: 10px; 
     font-size: 2.5em;
@@ -133,6 +248,7 @@ body {
   }
   
   footer {
+    position: relative;
     display: flex;
     justify-content: space-evenly;  
     align-items: flex-end;          
@@ -147,25 +263,51 @@ body {
     display: block; 
     text-align: center;
     padding-top: 10px;
-    border-bottom: 4px solid white; 
-    border-left: 4px solid white;       
-    border-right: 4px solid white;                
+    border-bottom: 4px solid white;                
   }
   
   footer a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-size: 1.5em;
     display: inline-block; 
     margin: 5px;
   }
+
+  footer a:hover {
+    transform: scale(1.2);
+}
   
   /* Kontaktikoner */
   footer img {
     width: 30px;
     height: 30px;
-    margin: 0 10px;                
+    margin: 0 10px;  
+    transition: transform 0.3s ease, filter 0.3s ease;              
   }
   
-  
+  /* Tooltip-stil */
+.tooltip {
+  position: absolute;
+  bottom: 60px; /* Justera så att texten visas ovanför ikonen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Visa tooltip vid hover */
+footer a:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-5px); /* Lätt animation */
+}
   

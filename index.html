@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="css/main.css">
     <meta name="description" content="Här kan man läsa Angelicas CV. Alltså få en förståelse kring vilken kunskap och erfarenhet hon bär på och vad hon kan hjälpa ert företag med.">
 
-    <meta property="og:url" content="file:///C:/Users/angel/Documents/GitHub/fed24d-html-css-inlamningsuppgift1-angien90/index.html"><meta property="og:title" content="Front End Developer">
+    <meta property="og:url" content="https://angien90.github.io/CV/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Angelica Nylanders CV">
     <meta property="og:description" content="Här sammanställs Angelica Nylanders utbildningar, erfarenheter, färdigheter och meriter">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/99916077?v=4">
   
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <link rel="icon" href="img/angelica_nylander.jpg" sizes="any">
     <link rel="icon" href="img/angelica_nylander.jpg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/angelica_nylander.jpg">
   
-    <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#fafafa">
 
     <script type="application/ld+json">
@@ -37,10 +37,17 @@
 
 <body>
     <aside>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>            
+        </div>
         <img class="profilepicture" src="img/angelica_nylander.jpg" alt="Profilbild på Angelica Nylander" width="300">
         
         <h2 class="heading">Kort om mig</h2> 
-        <p>Jag är en strukturerad och resultatinriktad person som trivs med att skapa ordning och reda. Jag har ett starkt engagemang för mina uppdrag och känner stor yrkesstolthet över att leverera högkvalitativa resultat. Min passion för utveckling driver mig att kontinuerligt söka nya utmaningar och jag har lätt för att snabbt ta till mig nya system och program. På fritiden uppskattar jag att umgås med nära och kära, gå långpromenader i naturen och fånga ögonblick genom fotografering. Kreativitet är också en viktig del av mitt liv, vilket jag uttrycker genom olika pysselprojekt. Träning är en annan viktig del av min vardag.</p>
+        <p>Jag är en strukturerad och resultatinriktad person som trivs med att skapa ordning och reda. Jag har ett starkt engagemang för mina uppdrag och känner stor yrkesstolthet över att leverera högkvalitativa resultat. Min passion för utveckling driver mig att kontinuerligt söka nya utmaningar och jag har lätt för att snabbt ta till mig nya system och program. </p>
+        <p>På fritiden uppskattar jag att umgås med nära och kära, gå långpromenader i naturen och fånga ögonblick genom fotografering. Kreativitet är också en viktig del av mitt liv, vilket jag uttrycker genom olika pysselprojekt. Träning är en annan viktig del av min vardag.</p>
         
         <h2 class="heading">Kompetens</h2>
         <ul>
@@ -84,7 +91,7 @@
         <p class="reference">Referenser lämnas på begäran!</p>
         <br>
         <div class="buttons">
-            <a href="personligt_brev.html" target="_blank"><button>Personligt brev</button></a>
+            <button onclick="window.location.href='personligt_brev.html';">Personligt brev</button>
             <button onclick="window.print()">Skriv ut</button>
         </div>
         </aside>
@@ -159,11 +166,24 @@
     </main>
 
     <footer>
-        <a href="tel:+46732096320"><img src="img/phone-fill.png" alt="Telefon"></a>
-        <a href="mailto:angelica.nylander@medieinstitutet.se"><img src="img/mail-open-fill.png" alt="E-post"></a>
-        <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank"><img src="img/linkedin-box-fill.png" alt="LinkedIn"></a>
-        <a href="https://github.com/angien90" target="_blank"><img src="img/github-fill.png" alt="GitHub"></a>
+        <a href="tel:+46732096320">
+            <img src="img/phone-fill.png" alt="Telefon">
+            <span class="tooltip">Ring mig på 0732-09 63 20</span>
+        </a>
+        <a href="mailto:angelica.nylander@medieinstitutet.se">
+            <img src="img/mail-open-fill.png" alt="E-post">
+            <span class="tooltip">Skicka e-post</span>
+        </a>
+        <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank">
+            <img src="img/linkedin-box-fill.png" alt="LinkedIn">
+            <span class="tooltip">Besök min LinkedIn</span>
+        </a>
+        <a href="https://github.com/angien90" target="_blank">
+            <img src="img/github-fill.png" alt="GitHub">
+            <span class="tooltip">Besök min GitHub</span>
+        </a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
