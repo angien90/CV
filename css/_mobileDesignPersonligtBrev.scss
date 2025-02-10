@@ -33,6 +33,10 @@ body.dark-mode footer {
   color: white;
 }
 
+body.dark-mode main a {
+  color: white;
+}
+
 body.light-mode a img {
   filter: invert(0%) sepia(100%) hue-rotate(180deg); 
 }
@@ -106,13 +110,11 @@ input:checked + .slider:before {
   background-size: cover;
 }
 
-/* Tooltip för ljust läge */
 body.light-mode .tooltip {
   background-color: rgba(0, 0, 0, 0.8); 
   color: white; 
 }
 
-/* Tooltip för mörkt läge */
 body.dark-mode .tooltip {
   background-color: rgba(255, 255, 255, 0.9); 
   color: black; 
@@ -264,7 +266,7 @@ footer {
   color: white;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   border-top: 10px double white;
   height: 50px;  
   display: block; 
