@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV för Angelica Nylander</title>
-    <link rel="stylesheet" href="css/main.css">
     <meta name="description" content="Här kan man läsa Angelicas CV. Alltså få en förståelse kring vilken kunskap och erfarenhet hon bär på och vad hon kan hjälpa ert företag med.">
 
-    <meta property="og:url" content="file:///C:/Users/angel/Documents/GitHub/fed24d-html-css-inlamningsuppgift1-angien90/index.html"><meta property="og:title" content="Front End Developer">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <meta property="og:url" content="https://angien90.github.io/CV/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Angelica Nylanders CV">
     <meta property="og:description" content="Här sammanställs Angelica Nylanders utbildningar, erfarenheter, färdigheter och meriter">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/99916077?v=4">
   
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <link rel="icon" href="img/angelica_nylander.jpg" sizes="any">
     <link rel="icon" href="img/angelica_nylander.jpg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/angelica_nylander.jpg">
   
-    <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#fafafa">
 
     <script type="application/ld+json">
@@ -37,42 +39,54 @@
 
 <body>
     <aside>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>            
+        </div>
         <img class="profilepicture" src="img/angelica_nylander.jpg" alt="Profilbild på Angelica Nylander" width="300">
         
         <h2 class="heading">Kort om mig</h2> 
-        <p>Jag är en strukturerad och resultatinriktad person som trivs med att skapa ordning och reda. Jag har ett starkt engagemang för mina uppdrag och känner stor yrkesstolthet över att leverera högkvalitativa resultat. Min passion för utveckling driver mig att kontinuerligt söka nya utmaningar och jag har lätt för att snabbt ta till mig nya system och program. På fritiden uppskattar jag att umgås med nära och kära, gå långpromenader i naturen och fånga ögonblick genom fotografering. Kreativitet är också en viktig del av mitt liv, vilket jag uttrycker genom olika pysselprojekt. Träning är en annan viktig del av min vardag.</p>
+        <p>Jag är en lösningsorienterad och engagerad person med ett öga för detaljer och en stark vilja att utvecklas. Med en strukturerad och analytisk inställning tar jag mig an nya utmaningar och har lätt för att snabbt sätta mig in i nya system och teknologier. Jag trivs i miljöer där jag får kombinera kreativitet med funktionalitet och skapa användarvänliga lösningar.</p>
+        <p>Utanför arbetslivet är jag en aktiv och kreativ person. Jag tycker om att fotografera, arbeta med olika designprojekt och utforska naturen genom långa promenader. Jag uppskattar även träning och att umgås med familj och vänner.</p>
         
         <h2 class="heading">Kompetens</h2>
+        <h3>Teknik & utveckling</h3>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript & Ramverk</li>
-            <li>Agilt projektarbete (Scrum) </li>
-            <li>git</li>
-            <li>GitGub</li>
-            <li>Visual Studio Code</li>
-            <li>Arbetsmetodik för utvecklare</li>
-            <li>UX/Usability</li>
-            <li>Grafiska verktyg för gränssnittsdesign</li>
-            <li>API-utveckling</li>
-            <li>Testning</li>
-            <li>Kvalitetsledning (ISO 9001)</li>
-            <li>Miljöledning (ISO 14001)</li>
-            <li>Ledningsystem för arbetsmiljö (ISO 45001)</li>
-            <li>Hållbarhet</li>
-            <li>Lagefterlevnad</li>
+            <li>HTML, CSS, Sass</li>
+            <li>JavaScript, TypeScript</li>
+            <li>Vue, React</li>
+            <li>Responsiv design & tillgänglighet</li>
+            <li>API-hantering (REST) & databaser (SQL/NoSQL)</li>
+            <li>Testning, felsökning & debugging
+            <li>Git, GitHub & versionshantering</li>
+            <li>Visual Studio Code, SSH & nyckelhantering</li>
+            <li>Kodoptimering & refaktorering</li>
+        </ul>
+
+        <h3>Design & användarupplevelse</h3>
+        <ul>
+            <li>UX/Usability (Design Thinking)</li>
+            <li>Figma & grafiska verktyg för UI-design</li>
+        </ul>
+
+        <h3>Projekt & ledning</h3>
+        <ul>
+            <li>Agilt arbete (Scrum)</li>
+            <li>Kvalitets-, miljö- & arbetsmiljöledning (ISO 9001, ISO 14001, ISO 45001)</li>
+            <li>Hållbarhet & lagefterlevnad</li>
         </ul>
 
         <h2 class="heading">Meriter</h2>
         <ul>
-            <li>Körkort, typ B</li>
+            <li>Körkort, B</li>
             <li>Egenföretagare</li>
-            <li>Studierepresentant</li>
-            <li>Anteckningsstöd åt klasskamrater</li>
-            <li>God AI-kunskap</li>
-            <li>MS Office (Word, Excel, PowerPoint)</li>
-            <li>MS 365 (Outlook, Teams, SharePoint, Power Automate etc.)</li>
-            <li>Pyramid Business Studio</li>
+            <li>Studierepresentant, Medieinstitutet</li>
+            <li>Studieassistent - anteckningsstöd</li>
+            <li>Goda AI-kunskaper</li>
+            <li>Microsoft 365 (Word, Excel, PowerPoint, Outlook, Teams, SharePoint, Power Automate)</li>
+            <li>Erfarenhet av affärssystem (Pyramid Business Studio)</li>
         </ul>
 
         <h2 class="heading">Språk</h2>
@@ -84,7 +98,7 @@
         <p class="reference">Referenser lämnas på begäran!</p>
         <br>
         <div class="buttons">
-            <a href="personligt_brev.html" target="_blank"><button>Personligt brev</button></a>
+            <button onclick="window.location.href='personligt_brev.html';">Personligt brev</button>
             <button onclick="window.print()">Skriv ut</button>
         </div>
         </aside>
@@ -159,11 +173,24 @@
     </main>
 
     <footer>
-        <a href="tel:+46732096320"><img src="img/phone-fill.png" alt="Telefon"></a>
-        <a href="mailto:angelica.nylander@medieinstitutet.se"><img src="img/mail-open-fill.png" alt="E-post"></a>
-        <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank"><img src="img/linkedin-box-fill.png" alt="LinkedIn"></a>
-        <a href="https://github.com/angien90" target="_blank"><img src="img/github-fill.png" alt="GitHub"></a>
+        <a href="tel:+46732096320">
+            <img src="img/phone-fill.png" alt="Telefon">
+            <span class="tooltip">Ring mig på 0732-09 63 20</span>
+        </a>
+        <a href="mailto:angelica.nylander@medieinstitutet.se">
+            <img src="img/mail-open-fill.png" alt="E-post">
+            <span class="tooltip">Skicka e-post</span>
+        </a>
+        <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank">
+            <img src="img/linkedin-box-fill.png" alt="LinkedIn">
+            <span class="tooltip">Besök min LinkedIn</span>
+        </a>
+        <a href="https://github.com/angien90" target="_blank">
+            <img src="img/github-fill.png" alt="GitHub">
+            <span class="tooltip">Besök min GitHub</span>
+        </a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

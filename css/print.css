@@ -1,0 +1,50 @@
+@page {
+    margin-top: 30mm; /* Justera efter behov */
+    margin-bottom: 30mm;
+}
+
+/* Ta bort onödiga element vid utskrift */
+footer, .buttons {
+    display: none;
+}
+
+/* Anpassa marginaler och färger */
+body {
+    color: #000;
+    background: #fff;
+}
+
+/* Gör text mer läsbar */
+main, aside {
+    font-size: 12pt;
+    line-height: 1.6; /* Ökar läsbarheten */
+    margin-top: 0; /* Tar bort extra marginal */
+    padding-top: 0;
+}
+
+aside {
+    page-break-after: always;
+}
+
+main {
+    page-break-before: always;
+}
+
+main h2, aside h2, main p {
+    margin-top: 0 !important;
+}
+
+main h3 {
+    margin-bottom: 0 !important;
+}
+
+/* Se till att länkar visas korrekt */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+}
