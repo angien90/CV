@@ -141,8 +141,17 @@ aside img {
 aside h2 {
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 1.5em;
+}
+
+aside h3 {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: normal;
+  text-decoration: underline;
 }
 
 aside p {
@@ -150,7 +159,7 @@ aside p {
   margin-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 ul {
@@ -158,13 +167,14 @@ ul {
   padding: 0; 
   margin: 0; 
   text-align: center; 
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 ul li {
   display: block; 
   margin: 10px; 
-  margin-top: 5px;
+  margin-top: 0;
+  font-size: 1.2em;
 }
 
 .reference {
@@ -188,7 +198,7 @@ aside button {
   border: none; 
   border-radius: 5px; 
   color: #333;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: bold;
   cursor: pointer;
   margin-top: 30px;
@@ -251,11 +261,12 @@ main h3 {
 
 main h4 {
   margin-bottom: -10px;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 main p {
   margin-top: 10px;
+  font-size: 1.2em;
 }
 
 /* Footer */
