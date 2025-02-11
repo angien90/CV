@@ -90,7 +90,7 @@ body.dark-mode a img {
   width: 36px;
   left: 4px;
   bottom: 4px;
-  background-image: url('/dark_mode_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg') !important;
+  background-image: url('../img/dark_mode.svg') !important;
   transition: 0.4s;
   border-radius: 50%;
   background-size: cover;
@@ -106,7 +106,7 @@ input:checked + .slider:hover {
 
 input:checked + .slider:before {
   transform: translateX(36px);
-  background-image: url('/light_mode_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg') !important;
+  background-image: url('../img/light_mode.svg') !important;
   background-size: cover;
 }
 
