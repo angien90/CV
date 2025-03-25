@@ -1,77 +1,76 @@
 body {
-    flex-direction: row;
-  }
+  flex-direction: row;
+}
   
-  aside {
-    width: 30%;  
-    border-right: 10px double white;
-    box-sizing: border-box;
-    margin-bottom: 60px;
-  }
+aside {
+  width: 30%;  
+  border-right: 10px double white;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
   
-  aside h2 {
-    margin-top: 50px;
-    font-size: 2em;
-  }
+aside h2 {
+  margin-top: 50px;
+  font-size: 2em;
+}
   
-  aside p {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1.2em;
-  }
+aside p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.2em;
+}
   
-  ul li {
-    font-size: 1.2em;
-  }
+ul li {
+  font-size: 1.2em;
+}
 
-  .reference {
-    font-size: 1.5em;
-  }
+.reference {
+  font-size: 1.5em;
+}
 
-  aside button {
-    font-size: 1.1em;
-    width: 200px;
-  }
+aside button {
+  font-size: 1.1em;
+  width: 200px;
+}
 
-  main {  
-    width: 400px;
-    border-top: 4px solid white;
-    margin-bottom: 70px;
-    border-left: 0px;
-  }
+main {  
+  width: 400px;
+  border-top: 4px solid white;
+  margin-bottom: 70px;
+  border-left: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
   
-  main h1 {
-    margin-bottom: 0px; 
-    font-size: 3em;
-  }
+main h1 {
+  margin-bottom: 0px; 
+  font-size: 3em;
+}
   
-  main h2 {
-    margin-top: 5px;
-    font-size: 2.5em;
-  }
+main h2 {
+  margin-top: 5px;
+  font-size: 2.5em;
+}
   
-  main h3 {
-    font-size: 2em;
-    margin-top: 80px;
-  }
+main h3 {
+  font-size: 2em;
+  margin-top: 80px;
+}
   
-  main h4 {
-    font-size: 1.2em;
-  }
+main h4 {
+  font-size: 1.2em;
+}
   
-  main p {
-    font-size: 1.2em;
-  }
+main p {
+  font-size: 1.2em;
+}
   
-  footer {
-    align-items: flex-end;          
-    height: 50px;                 
-  }
+footer {
+  align-items: flex-end;          
+  height: 50px;                 
+}
   
-  footer img {
-    margin-left: 40px;
-    margin-right: 40px;                  
-  }
-  
-  
-  
+footer img {
+  margin-left: 40px;
+  margin-right: 40px;                  
+}
