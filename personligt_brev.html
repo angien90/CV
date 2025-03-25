@@ -7,7 +7,7 @@
     
     <!-- SEO -->
     <meta name="description" content="Angelica Nylander är en frontendutvecklare som söker praktik. Läs hennes personliga brev och se hennes erfarenheter och projekt.">
-    <meta name="keywords" content="Angelica Nylander, frontend developer, personligt brev, praktik, webbutveckling, HTML, CSS, JavaScript">
+    <meta name="keywords" content="Angelica Nylander, frontend developer, frontendutveckling, front-end developer, front end developer, frontend, front end, personligt brev, praktik, webbutveckling, HTML, CSS, JavaScript">
     <meta name="author" content="Angelica Nylander">
 
     <!-- Open Graph (Facebook, LinkedIn) -->
@@ -29,6 +29,9 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
     <!-- Favicon -->
     <link rel="icon" href="img/angelica_nylander.jpg" type="image/jpeg">
@@ -77,9 +80,9 @@
         <p>Göteborg</p>
         <br>
         <div class="buttons">
-            <a href="index.html" target="_blank"><button>Mitt CV</button></a>
+            <button onclick="window.location.href='index.html';">Mitt CV</button>
             <button onclick="window.print()">Skriv ut</button>
-        </div>
+          </div>
     </aside>
 
     <main>
@@ -94,7 +97,7 @@
         <p>Jag ser fram emot möjligheten att utvecklas i en professionell miljö och att bidra med mina kunskaper. Jag berättar gärna mer om mig själv och hur jag kan vara till nytta för ert team – hör gärna av er om ni vill ta ett samtal!</p>
     </main>
 
-    <footer>
+    <footer data-aos="fade-up">
         <a href="tel:+46732096320">
             <img src="img/phone-fill.png" alt="Telefon">
             <span class="tooltip">Ring mig på 0732-09 63 20</span>
@@ -113,6 +116,9 @@
         </a>
     </footer>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
+    <!-- AOS-initialisering -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>
