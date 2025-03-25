@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 800,
+      easing: 'slide'
+    });
+  });
+
+// Animerar skills progress bars när sidan scrollas
+function animateSkills() {
+  var skills = document.querySelectorAll('.progress');
+  skills.forEach(function(bar) {
+    var skillLevel = bar.getAttribute('data-skill');
+    bar.style.width = skillLevel + '%';
+  });
+}
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 200) {
+    animateSkills();
+  }
+});
+
 // Dark / light mode
 document.addEventListener('DOMContentLoaded', () => {
     const checkbox = document.getElementById('checkbox');
@@ -24,4 +45,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-

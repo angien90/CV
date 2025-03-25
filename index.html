@@ -1,196 +1,294 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV för Angelica Nylander</title>
-    <meta name="description" content="Här kan man läsa Angelicas CV. Alltså få en förståelse kring vilken kunskap och erfarenhet hon bär på och vad hon kan hjälpa ert företag med.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angelica Nylander - Frontend Developer | CV</title>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/print.css" media="print">
+  <!-- SEO -->
+  <meta name="description" content="Angelica Nylander är en frontendutvecklare som söker praktik. Se hennes CV med utbildningar, erfarenheter och tekniska färdigheter.">
+  <meta name="keywords" content="Angelica Nylander, frontend developer, CV, praktik, webbutveckling, HTML, CSS, JavaScript, UX/UI design, React, GitHub">
+  <meta name="author" content="Angelica Nylander">
 
-    <meta property="og:url" content="https://angien90.github.io/CV/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Angelica Nylanders CV">
-    <meta property="og:description" content="Här sammanställs Angelica Nylanders utbildningar, erfarenheter, färdigheter och meriter">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/99916077?v=4">
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://angien90.github.io/CV/">
+  <meta property="og:title" content="Angelica Nylander - Frontend Developer | CV">
+  <meta property="og:description" content="Angelica Nylander är en frontendutvecklare som söker praktik. Se hennes CV med utbildningar, erfarenheter och tekniska färdigheter.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/99916077?v=4">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Angelica Nylander - Frontend Developer | CV">
+  <meta name="twitter:description" content="Angelica Nylander är en frontendutvecklare som söker praktik. Se hennes CV med utbildningar, erfarenheter och tekniska färdigheter.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/99916077?v=4">
+
+  <!-- Externa CSS-filer -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/angelica_nylander.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="img/angelica_nylander.jpg">
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Angelica Nylander",
+      "jobTitle": "Frontend Developer",
+      "description": "Angelica Nylander är en frontendutvecklare med kunskaper inom HTML, CSS, JavaScript och React. Se hennes CV med utbildningar, erfarenheter och tekniska färdigheter.",
+      "url": "https://angien90.github.io/CV/",
+      "image": "https://avatars.githubusercontent.com/u/99916077?v=4",
+      "sameAs": [
+        "https://github.com/angien90",
+        "https://www.linkedin.com/in/angelica-nylander-bb894b30/"
+      ]
+    }
+  </script>
   
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
-    <link rel="icon" href="img/angelica_nylander.jpg" sizes="any">
-    <link rel="icon" href="img/angelica_nylander.jpg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/angelica_nylander.jpg">
-  
-    <meta name="theme-color" content="#fafafa">
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org/",
-          "@type": "Person",
-          "familyName": "Nylander",
-          "givenName": "Angelica",
-          "jobTitle": "Frontend Developer",
-          "image": "img/angelica_nylander.jpg",
-          "description": "Här sammanställs Angelica Nylanders utbildningar, erfarenheter, färdigheter och meriter."
-        }
-    </script>
 </head>
-
-<body>
-    <aside>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>            
-        </div>
-        <img class="profilepicture" src="img/angelica_nylander.jpg" alt="Profilbild på Angelica Nylander" width="300">
-        
-        <h2 class="heading">Kort om mig</h2> 
-        <p>Jag är en lösningsorienterad och engagerad person med ett öga för detaljer och en stark vilja att utvecklas. Med en strukturerad och analytisk inställning tar jag mig an nya utmaningar och har lätt för att snabbt sätta mig in i nya system och teknologier. Jag trivs i miljöer där jag får kombinera kreativitet med funktionalitet och skapa användarvänliga lösningar.</p>
-        <p>Utanför arbetslivet är jag en aktiv och kreativ person. Jag tycker om att fotografera, arbeta med olika designprojekt och utforska naturen genom långa promenader. Jag uppskattar även träning och att umgås med familj och vänner.</p>
-        
-        <h2 class="heading">Kompetens</h2>
-        <h3>Teknik & utveckling</h3>
-        <ul>
-            <li>HTML, CSS, Sass</li>
-            <li>JavaScript, TypeScript</li>
-            <li>Vue, React</li>
-            <li>Responsiv design & tillgänglighet</li>
-            <li>API-hantering (REST) & databaser (SQL/NoSQL)</li>
-            <li>Testning, felsökning & debugging
-            <li>Git, GitHub & versionshantering</li>
-            <li>Visual Studio Code, SSH & nyckelhantering</li>
-            <li>Kodoptimering & refaktorering</li>
-        </ul>
-
-        <h3>Design & användarupplevelse</h3>
-        <ul>
-            <li>UX/Usability (Design Thinking)</li>
-            <li>Figma & grafiska verktyg för UI-design</li>
-        </ul>
-
-        <h3>Projekt & ledning</h3>
-        <ul>
-            <li>Agilt arbete (Scrum)</li>
-            <li>Kvalitets-, miljö- & arbetsmiljöledning (ISO 9001, ISO 14001, ISO 45001)</li>
-            <li>Hållbarhet & lagefterlevnad</li>
-        </ul>
-
-        <h2 class="heading">Meriter</h2>
-        <ul>
-            <li>Körkort, B</li>
-            <li>Egenföretagare</li>
-            <li>Studierepresentant, Medieinstitutet</li>
-            <li>Studieassistent - anteckningsstöd</li>
-            <li>Goda AI-kunskaper</li>
-            <li>Microsoft 365 (Word, Excel, PowerPoint, Outlook, Teams, SharePoint, Power Automate)</li>
-            <li>Erfarenhet av affärssystem (Pyramid Business Studio)</li>
-        </ul>
-
-        <h2 class="heading">Språk</h2>
-        <ul>
-            <li>Svenska</li>
-            <li>Engelska</li>
-        </ul>
-        <br>
-        <p class="reference">Referenser lämnas på begäran!</p>
-        <br>
-        <div class="buttons">
-            <button onclick="window.location.href='personligt_brev.html';">Personligt brev</button>
-            <button onclick="window.print()">Skriv ut</button>
-        </div>
-        </aside>
-
-    <main>
-        <h1>Angelica Nylander</h1>
-        <h2>Frontend Developer</h2>
-        
-        <h3 class="heading">Arbetslivserfarenhet</h3>
-        <hr>
-        <h4 class="subheading">Ägare & anställd | Ad Prosperitas | 2013-Idag</h4>
-        <p class="text">Som ägare och konsult inom kvalitets-, miljö- och arbetsmiljöfrågor, samt teknisk rådgivning, har jag ansvarat för att leverera skräddarsydda lösningar till kunder inom olika branscher. Jag har byggt långvariga kundrelationer och utvecklat effektivare processer för mina kunder.</p>
-        
-        <h4 class="subheading">Kvalitets- & miljösamordnare | Idnet | 2021-2024</h4>
-        <p class="text">Idnet digitaliserar processer för butik och lager. I rollen som kvalitets- och miljösamordnare utvecklade jag ledningssystem i Microsoft SharePoint för hela koncernen. Jag ansvarade för certifieringarna enligt ISO 9001 och ISO 14001 och utbildade personalen i systemet. Jag spelade även en nyckelroll i att förbättra arbetsmiljö och företagskultur via intranätet.</p>
-
-        <h4 class="subheading">Databasadministratör | Idnet | 2019-2021</h4>
-        <p class="text">Som databasadministratör ansvarade jag för den dagliga driften av affärssystemet Pyramid Business Studio, samt för systemanpassningar och utbildning av användare. Jag bidrog aktivt till att optimera affärsprocesser genom att utveckla skräddarsydda lösningar.</p></p>
-         
-        <h4 class="subheading">Inköp och kvalitetssamordnare | Alnova Balkongsystem | 2014-2018</h4>
-        <p class="text">Jag införde och underhöll ISO-certifikat, samt ledde övergången till ISO 9001:2015. I min roll ingick också ansvar för inköp och projektledning av system för affärsledning och kvalitetsförbättring. Jag utvecklade företagets nya hemsida som en del av digitalisering och kommunikationsstrategi.</p>
-        
-        <h4 class="subheading">Praktik | Alnova Balkongsystem | 2014</h4>
-        <p class="text">Under min praktik genomförde jag ett projekt för CE-märkning av företagets produkter samt uppdaterade projektplaneringsverktyg för att förenkla arbetsflöden.</p>
+<body class="light-mode">
+   
+  <aside>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>            
+    </div>
+    <img id="profilePic" class="profilepicture" src="img/angelica_nylander.jpg" alt="Profilbild på Angelica Nylander" width="300">
     
-        <h4 class="subheading">Praktik | Hedlunds pappersindustri | 2013</h4>
-        <p class="text">Genomförde en gap-analys av verksamhetsledningssystem och arbetade med internrevisioner för att identifiera och åtgärda miljörisker.</p>
-   
-        <h4 class="subheading">Praktik | Ballograf | 2011 & 2012</h4>
-        <p class="text">Som praktikant dokumenterade jag kvalitetsarbete, utvecklade policyer och analyserade produktionslinjers TAK-värde för att säkerställa kvalitet.</p>
-   
-        <h4 class="subheading">Praktik | Elicit | 2010 & 2011</h3>
-        <p class="text">Deltog i värdeflödesanalyser och arbetade med förbättringsprojekt inom Lean-metodik för företagets kunder.</p>
-   
-        <h4 class="subheading">Teknisk assistent | Consilium | 2006-2013</h4>
-        <p class="text">Arbetade med produktutveckling och tekniskt stöd, samt ansvarade för ordermottagning och registrering.</p>
-   
-        <h3 class="heading">Utbildning</h3>
-        <hr>
-        <h4 class="subheading">Front End Developer | Medieinstitutet | 2024-2026</h4>
-        <p class="text">Denna utbildning ger mig en bred kunskap inom webbproduktion, inklusive HTML, CSS, JavaScript och responsiv design.</p>
-        
-        <h4 class="subheading">Kvalitets- och Miljöledare | Folkuniversitetet | 2012-2014</h4>
-        <p class="text">Utbildningen gav mig färdigheter inom förändringsarbete inom kvalitet, miljö och arbetsmiljö.</p>
-        
-        <h4 class="subheading">Produktionsutveckling | Göteborgs Tekniska Collage | 2010-2012</h4>
-        <p class="text">Utbildning i förbättring och utveckling av produktionsprocesser med fokus på hållbar utveckling.</p>
-        
-        <h4 class="subheading">Teknik | Frölundagymnasiet | 2006-2008</h4>
-        <p class="text">Utbildning i teknik och produktutveckling.</p>
-        
-        <h3 class="heading">Diplom</h3>
-        <hr>
-        <h4 class="subheading">Microsoft SharePoint Online | 2022</h4>
-        <p class="text">Grundläggande kunskaper i administration och användning av Microsoft SharePoint Online.</p>
-        
-        <h4 class="subheading">5 Day Coding Challenge | 2022</h4>
-        <p class="text">Grunderna i HTML, CSS och JavaScript.</p>
-        
-        <h4 class="subheading">BAM - Bättre arbetsmiljö | 2021</h4>
-        <p class="text">Kunskap om arbetsmiljöarbete och riskförebyggande åtgärder.</p>
-        
-        <h4 class="subheading">UA-akademins grundkurs | 2021</h4>
-        <p class="text">Förståelse för aktiemarknaden, fonder och pensionssparande.</p>
-        
-        <h4 class="subheading">Entreprenadjuridik 1 | 2017</h4>
-        <p class="text">Grundläggande kunskaper i entreprenadjuridik med fokus på AB-U 07 och ABT-U 07.</p>
-        
-        <h4 class="subheading">SAM - Sekvensbaserad Aktivitets- och Metodanalys | 2011</h4>
-        <p class="text">Färdighet i att dokumentera och analysera arbetsmetoder och tidsåtgång.</p>
-   
-    </main>
+    <h2 class="heading">Kort om mig</h2> 
+    <p>Jag är en lösningsorienterad och engagerad person med ett öga för detaljer och en stark vilja att utvecklas. Med en strukturerad och analytisk inställning tar jag mig an nya utmaningar och har lätt för att snabbt sätta mig in i nya system och teknologier. Jag trivs i miljöer där jag får kombinera kreativitet med funktionalitet och skapa användarvänliga lösningar.</p>
+    <p>Utanför arbetslivet är jag en aktiv och kreativ person. Jag tycker om att fotografera, arbeta med olika designprojekt och utforska naturen genom långa promenader. Jag uppskattar även träning och att umgås med familj och vänner.</p>
 
-    <footer>
-        <a href="tel:+46732096320">
-            <img src="img/phone-fill.png" alt="Telefon">
-            <span class="tooltip">Ring mig på 0732-09 63 20</span>
-        </a>
-        <a href="mailto:angelica.nylander@medieinstitutet.se">
-            <img src="img/mail-open-fill.png" alt="E-post">
-            <span class="tooltip">Skicka e-post</span>
-        </a>
-        <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank">
-            <img src="img/linkedin-box-fill.png" alt="LinkedIn">
-            <span class="tooltip">Besök min LinkedIn</span>
-        </a>
-        <a href="https://github.com/angien90" target="_blank">
-            <img src="img/github-fill.png" alt="GitHub">
-            <span class="tooltip">Besök min GitHub</span>
-        </a>
-    </footer>
+    <h2 class="heading">Kompetens</h2>
+    <h3>Teknik & utveckling <span class="material-symbols-outlined">code</span></h3>
+    <div class="skill">
+      <div class="skill-name">HTML/CSS/Sass</div>
+      <div class="progress-bar"><div class="progress" data-skill="90"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript/TypeScript</div>
+      <div class="progress-bar"><div class="progress" data-skill="80"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Vue/React</div>
+      <div class="progress-bar"><div class="progress" data-skill="75"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Responsiv design & tillgänglighet</div>
+      <div class="progress-bar"><div class="progress" data-skill="85"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">SEO (Sökmotoroptimering)</div>
+      <div class="progress-bar"><div class="progress" data-skill="75"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">API-hantering (REST) & databaser (SQL/NoSQL)</div>
+      <div class="progress-bar"><div class="progress" data-skill="55"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Testning, felsökning & debugging</div>
+      <div class="progress-bar"><div class="progress" data-skill="70"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Git, GitHub & versionshantering</div>
+      <div class="progress-bar"><div class="progress" data-skill="65"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Visual Studio Code, SSH & nyckelhantering</div>
+      <div class="progress-bar"><div class="progress" data-skill="75"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Kodoptimering & refaktorering</div>
+      <div class="progress-bar"><div class="progress" data-skill="75"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">AI-kunskaper</div>
+      <div class="progress-bar"><div class="progress" data-skill="85"></div></div>
+    </div>
 
-    <script src="script.js"></script>
+    <h3>Design & användarupplevelse <span class="material-symbols-outlined">brush</span></h3>
+    <div class="skill">
+      <div class="skill-name">UX/Usability (Design Thinking)</div>
+      <div class="progress-bar"><div class="progress" data-skill="65"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Grafiska profiler</div>
+      <div class="progress-bar"><div class="progress" data-skill="75"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Figma och grafiska verktyg</div>
+      <div class="progress-bar"><div class="progress" data-skill="75"></div></div>
+    </div>
+
+    <h3>Projekt & ledning <span class="material-symbols-outlined">verified</span></h3>
+    <div class="skill">
+      <div class="skill-name">Agilt arbete (Scrum)</div>
+      <div class="progress-bar"><div class="progress" data-skill="70"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Microsoft 365</div>
+      <div class="progress-bar"><div class="progress" data-skill="85"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Miro</div>
+      <div class="progress-bar"><div class="progress" data-skill="75"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Kvalitets-, miljö- & arbetsmiljöledning (ISO 9001, ISO 14001, ISO 45001)</div>
+      <div class="progress-bar"><div class="progress" data-skill="85"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Hållbarhet & lagefterlevnad</div>
+      <div class="progress-bar"><div class="progress" data-skill="75"></div></div>
+    </div>
+    
+    <h2 class="heading">Meriter</h2>
+    <ul>
+      <li>Körkort, B</li>
+      <li>Egenföretagare</li>
+      <li>Studierepresentant, Medieinstitutet</li>
+      <li>Studieassistent - Anteckningsstöd</li>
+      <li>Skapat och driver en hemsida för en forskargrupp, där jag och flera andra aktivt arbetar.</li>
+      <li>Initiativtagare inom bostadsområdet</li>
+      <li>Erfarenhet av affärssystem (Pyramid Business Studio)</li>
+    </ul>
+    
+    <h2 class="heading">Språk</h2>
+    <ul>
+      <li>Svenska</li>
+      <li>Engelska</li>
+    </ul>
+
+    <br>
+    <p class="reference">Referenser lämnas på begäran!</p>
+    <br>
+    <div class="buttons">
+      <button onclick="window.location.href='personligt_brev.html';">Personligt brev</button>
+      <button onclick="window.print()">Skriv ut</button>
+    </div>
+  </aside>
+
+  <main>
+    <h1>Angelica Nylander</h1>
+    <h2>Frontend Developer</h2>
+    
+    <section>
+      <h3 class="heading">Arbetslivserfarenhet</h3>
+      <hr>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Ägare & anställd | Ad Prosperitas | 2013-Idag</h4>
+          <p class="text">Som ägare och konsult inom kvalitets-, miljö- och arbetsmiljöfrågor, samt teknisk rådgivning, har jag ansvarat för att leverera skräddarsydda lösningar till kunder inom olika branscher. Jag har byggt långvariga kundrelationer och utvecklat effektivare processer för mina kunder.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Kvalitets- & miljösamordnare | Idnet | 2021-2024</h4>
+          <p class="text">Idnet digitaliserar processer för butik och lager. I rollen som kvalitets- och miljösamordnare utvecklade jag ledningssystem i Microsoft SharePoint för hela koncernen. Jag ansvarade för certifieringarna enligt ISO 9001 och ISO 14001 och utbildade personalen i systemet. Jag spelade även en nyckelroll i att förbättra arbetsmiljö och företagskultur via intranätet.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Databasadministratör | Idnet | 2019-2021</h4>
+          <p class="text">Som databasadministratör ansvarade jag för den dagliga driften av affärssystemet Pyramid Business Studio, samt för systemanpassningar och utbildning av användare. Jag bidrog aktivt till att optimera affärsprocesser genom att utveckla skräddarsydda lösningar.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Inköp och kvalitetssamordnare | Alnova Balkongsystem | 2014-2018</h4>
+          <p class="text">Jag införde och underhöll ISO-certifikat, samt ledde övergången till ISO 9001:2015. I min roll ingick även ansvar för inköp och projektledning av system för affärsledning och kvalitetsförbättring. Jag utvecklade företagets nya hemsida som en del av digitalisering och kommunikationsstrategi.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Praktik | Alnova Balkongsystem | 2014</h4>
+          <p class="text">Under min praktik genomförde jag ett projekt för CE-märkning av företagets produkter samt uppdaterade projektplaneringsverktyg för att förenkla arbetsflöden.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Praktik | Hedlunds pappersindustri | 2013</h4>
+          <p class="text">Genomförde en gap-analys av verksamhetsledningssystem och arbetade med internrevisioner för att identifiera och åtgärda miljörisker.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Praktik | Ballograf | 2011 &amp; 2012</h4>
+          <p class="text">Som praktikant dokumenterade jag kvalitetsarbete, utvecklade policyer och analyserade produktionslinjers TAK-värde för att säkerställa kvalitet.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Praktik | Elicit | 2010 &amp; 2011</h4>
+          <p class="text">Deltog i värdeflödesanalyser och arbetade med förbättringsprojekt inom Lean-metodik för företagets kunder.</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <h4 class="subheading">Teknisk assistent | Consilium | 2006-2013</h4>
+          <p class="text">Arbetade med produktutveckling och tekniskt stöd, samt ansvarade för ordermottagning och registrering.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section data-aos="fade-up">
+      <h3 class="heading">Utbildning</h3>
+      <hr>
+      <h4 class="subheading">Front End Developer | Medieinstitutet | 2024-2026</h4>
+      <p class="text">Denna utbildning ger mig en bred kunskap inom webbproduktion, inklusive HTML, CSS, JavaScript och responsiv design.</p>
+      
+      <h4 class="subheading">Kvalitets- och Miljöledare | Folkuniversitetet | 2012-2014</h4>
+      <p class="text">Utbildningen gav mig färdigheter inom förändringsarbete inom kvalitet, miljö och arbetsmiljö.</p>
+      
+      <h4 class="subheading">Produktionsutveckling | Göteborgs Tekniska Collage | 2010-2012</h4>
+      <p class="text">Utbildning i förbättring och utveckling av produktionsprocesser med fokus på hållbar utveckling.</p>
+      
+      <h4 class="subheading">Teknik | Frölundagymnasiet | 2006-2008</h4>
+      <p class="text">Utbildning i teknik och produktutveckling.</p>
+    </section>
+    
+    <section data-aos="fade-up">
+      <h3 class="heading">Diplom</h3>
+      <hr>
+      <h4 class="subheading">Microsoft SharePoint Online | 2022</h4>
+      <p class="text">Grundläggande kunskaper i administration och användning av Microsoft SharePoint Online.</p>
+      
+      <h4 class="subheading">5 Day Coding Challenge | 2022</h4>
+      <p class="text">Grunderna i HTML, CSS och JavaScript.</p>
+      
+      <h4 class="subheading">BAM - Bättre arbetsmiljö | 2021</h4>
+      <p class="text">Kunskap om arbetsmiljöarbete och riskförebyggande åtgärder.</p>
+      
+      <h4 class="subheading">UA-akademins grundkurs | 2021</h4>
+      <p class="text">Förståelse för aktiemarknaden, fonder och pensionssparande.</p>
+      
+      <h4 class="subheading">Entreprenadjuridik 1 | 2017</h4>
+      <p class="text">Grundläggande kunskaper i entreprenadjuridik med fokus på AB-U 07 och ABT-U 07.</p>
+      
+      <h4 class="subheading">SAM - Sekvensbaserad Aktivitets- och Metodanalys | 2011</h4>
+      <p class="text">Färdighet i att dokumentera och analysera arbetsmetoder och tidsåtgång.</p>
+    </section>
+  </main>
+  
+  <footer data-aos="fade-up">
+    <a href="tel:+46732096320">
+      <img src="img/phone-fill.png" alt="Telefon">
+      <span class="tooltip">Ring mig på 0732-09 63 20</span>
+    </a>
+    <a href="mailto:angelica.nylander@medieinstitutet.se">
+      <img src="img/mail-open-fill.png" alt="E-post">
+      <span class="tooltip">Skicka e-post</span>
+    </a>
+    <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank">
+      <img src="img/linkedin-box-fill.png" alt="LinkedIn">
+      <span class="tooltip">Besök min LinkedIn</span>
+    </a>
+    <a href="https://github.com/angien90" target="_blank">
+      <img src="img/github-fill.png" alt="GitHub">
+      <span class="tooltip">Besök min GitHub</span>
+    </a>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <!-- AOS-initialisering -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>

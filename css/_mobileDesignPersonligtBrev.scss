@@ -121,6 +121,13 @@ body.dark-mode .tooltip {
   border: 1px solid rgba(0, 0, 0, 0.2); 
 }
 
+/* Gradient text för huvudrubriker */
+h1, h2, h3 {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Innehåll i aside */
 aside {
   background-color: #f4f4f4; 
@@ -166,6 +173,9 @@ aside h3 {
   margin-top: 20px;
   font-size: 1.5em;
   text-align: center;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 aside p {
@@ -183,7 +193,7 @@ aside button {
   display: block;
   margin: 20px auto;
   padding: 10px 20px; 
-  background-color: #e0e0e0;
+  background-color: #feb47b;
   border: none; 
   border-radius: 5px; 
   color: #333;
@@ -196,7 +206,7 @@ aside button {
 }
 
 aside button:hover {
-  background-color: #ccc;
+  background-color: #ff9a4d;
 }
 
 .buttons {
