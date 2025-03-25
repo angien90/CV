@@ -23,6 +23,13 @@ body.dark-mode aside {
   color: white;
 }
 
+body.dark-mode aside h3 {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white;
+  color: white;
+}
+
 body.dark-mode main {
   background: #333;
   color: white;
