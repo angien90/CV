@@ -8,6 +8,12 @@ body {
   }
   
   /* Mörkt & ljust läge */
+  body.light-mode .navbar,
+  body.light-mode .nav-links.active {
+    background: #f4f4f4;
+    color: black;
+  }
+
   body.light-mode aside {
     background-color: #f4f4f4; 
     color: black;
@@ -17,8 +23,19 @@ body {
     background-color: #e0e0e0;
     color: black;
   }
-  
-  
+
+  body.light-mode h1, 
+  body.light-mode h2 {
+  background: linear-gradient(90deg, #D12A00, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  body.dark-mode .navbar {
+    background: #333;
+    color: white;
+  }
+
   body.dark-mode aside {
     background-color: #333;
     color: white;
@@ -28,8 +45,21 @@ body {
       background: #333;
       color: white;
   }
+
+  body.dark-mode h1, 
+  body.dark-mode h2 {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
   
-  body.dark-mode footer {
+  body.dark-mode .navbar,
+  body.light-mode .nav-links.active {
+    background: #333;
+    color: white;
+  }
+
+   body.dark-mode footer {
     background: #333;
       color: white;
   }
@@ -118,12 +148,74 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2); 
   }
 
-/* Gradient text för huvudrubriker */
-h1, h2 {
-  background: linear-gradient(90deg, #ff7e5f, #feb47b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* Navigering */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    z-index: 1001;
+}
+
+/* När hamburgermenyn är aktiv */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    height: 100vh;
+    top: 0px;
+    z-index: 999;
+    padding-top: 80px;
+}
+
+/* --- Mobilanpassning (hamburgermeny) --- */
+.hamburger {
+    display: block; 
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #ff7e5f;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px; 
+}
+
+.hamburger.active {
+    transform: rotate(90deg);
+}
+
+/* Stil för länkar */
+.nav-links a {
+    text-decoration: none;
+    color: #ff7e5f;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
 
 /* Timeline för arbetslivserfarenhet */
 .timeline {
@@ -281,7 +373,7 @@ aside button {
   display: block;
   margin: 20px auto;
   padding: 10px 20px; 
-  background-color: #feb47b;
+  background-color: #EF8450;
   border: none; 
   border-radius: 5px; 
   color: #333;
@@ -294,7 +386,7 @@ aside button {
 }
 
 aside button:hover {
-  background-color: #ff9a4d;
+  background-color: #EF8450;
 }
 
 .buttons {
@@ -367,6 +459,11 @@ main p {
   hyphens: auto;
 }
 
+.material-symbols-outlined {
+  display: inline-block;
+  vertical-align: middle;  
+}
+
 /* Footer */
 footer {
   position: relative;
@@ -383,8 +480,7 @@ footer {
   height: 50px;  
   display: block; 
   text-align: center;
-  padding-top: 10px;
-  border-bottom: 4px solid white;                
+  padding-top: 10px;          
 }
 
 footer a {

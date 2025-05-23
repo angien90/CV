@@ -1,7 +1,66 @@
 body {
   flex-direction: row;
 }
-  
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Sätt en höjd */
+  background-color: #fff;
+  z-index: 1000;
+}
+
+main, aside {
+  margin-top: 85px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  z-index: 1000; 
+  height: 50px; 
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    position: absolute; 
+    top: 10px;
+    height: auto;
+    list-style: none;  
+}
+
+.nav-links a {
+  font-size: 1.5rem;
+}
+
+.hamburger {
+    display: none; 
+}
+
+nav ul {
+    font-size: 2em; 
+}
+
+[id]::before {
+  content: "";
+  display: block;
+  height: 90px;
+  visibility: hidden;
+}
+
 aside {
   width: 30%;  
   border-right: 10px double white;
