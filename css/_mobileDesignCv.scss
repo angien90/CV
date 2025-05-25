@@ -34,10 +34,19 @@ html, body {
     -webkit-text-fill-color: transparent;
   }
 
-  body.light-mode .nav-links a {
-    color: #cb7547;
+  body.light-mode h4 {
+    color: black;
   }
 
+  body.light-mode .nav-links a {
+    color: #d27b4b;
+  }
+
+   body.light-mode a img {
+    filter: invert(0%) sepia(100%) hue-rotate(180deg); 
+  }
+
+  /* Dark */
   body.dark-mode header,
   body.dark-mode .nav-links.active {
     background: #333;
@@ -62,6 +71,10 @@ html, body {
     -webkit-text-fill-color: transparent;
   }
 
+  body.dark-mode h4 {
+    color: white;
+  }
+
   body.dark-mode .nav-links a {
     color: #ff956b;
   }
@@ -69,10 +82,6 @@ html, body {
   body.dark-mode footer {
     background: #333;
     color: white;
-  }
-  
-  body.light-mode a img {
-    filter: invert(0%) sepia(100%) hue-rotate(180deg); 
   }
   
   body.dark-mode a img {
@@ -352,10 +361,10 @@ aside h2 {
   font-size: 2em;
 }
 
-aside h3 {
+aside h4 {
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 40px;
   font-size: 1.2em;
   font-weight: bold;
 }
