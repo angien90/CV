@@ -54,32 +54,38 @@
         "https://www.linkedin.com/in/angelica-nylander-bb894b30/"
       ]
     }
-  </script>
-  
+  </script> 
 </head>
+
 <body class="light-mode">
-  <header>
-    <nav class="navbar">
-      <button class="hamburger" id="hamburger-btn" aria-label="Meny">☰</button> 
-      <ul class="nav-links"> 
-        <li><a href="#kompetens">Kompetens</a></li>
-        <li><a href="#meriter">Meriter</a></li>
-        <li><a href="#sprak">Språk</a></li>
-        <li><a href="#erfarenhet">Arbetslivserfarenhet</a></li>
-        <li><a href="#utbildning">Utbildning</a></li>
-        <li><a href="#diplom">Diplom</a></li>      
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <button class="hamburger" id="hamburger-btn" aria-label="Meny">☰</button> 
+            <ul class="nav-links"> 
+              <li><a href="#kompetens">Kompetens</a></li>
+              <li><a href="#meriter">Meriter</a></li>
+              <li><a href="#sprak">Språk</a></li>
+              <li><a href="#erfarenhet">Erfarenhet</a></li>
+              <li><a href="#utbildning">Utbildning</a></li>
+              <li><a href="#diplom">Diplom</a></li> 
+              <li><a href="#diplom">Kontakt</a></li> 
+            </ul>
+        </nav>
+
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+            </label>            
+        </div>
+    </header>
    
   <aside>
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-        </label>            
-    </div>
     <img id="profilePic" class="profilepicture" src="img/angelica_nylander.jpg" alt="Profilbild på Angelica Nylander" width="300">
+    <div class="mobile-heading">
+      <h1>Angelica Nylander</h1>
+      <h2 class="title">Frontend Developer</h2>
+    </div>
     
     <h2 class="heading">Kort om mig</h2> 
     <p>Jag är en lösningsorienterad och engagerad person med ett öga för detaljer och en stark vilja att utvecklas. Med en strukturerad och analytisk inställning tar jag mig an nya utmaningar och har lätt för att snabbt sätta mig in i nya system och teknologier. Jag trivs i miljöer där jag får kombinera kreativitet med funktionalitet och skapa användarvänliga lösningar.</p>
@@ -182,7 +188,7 @@
       <li>Egenföretagare</li>
       <li>Studierepresentant, Medieinstitutet</li>
       <li>Studieassistent - Anteckningsstöd</li>
-      <li>Skapat och driver en hemsida för en forskargrupp, där jag och flera andra aktivt arbetar.</li>
+      <li>Skapat och driver en hemsida för en forskargrupp.</li>
       <li>Initiativtagare inom bostadsområdet</li>
       <li>Erfarenhet av affärssystem (Pyramid Business Studio)</li>
     </ul>
@@ -193,17 +199,14 @@
       <li>Engelska</li>
     </ul>
 
-    <br>
     <p class="reference">Referenser lämnas på begäran!</p>
-    <br>
-    <div class="buttons">
-      <button onclick="window.print()">Skriv ut</button>
-    </div>
   </aside>
 
   <main>
-    <h1>Angelica Nylander</h1>
-    <h2>Frontend Developer</h2>
+    <div class="desktop-heading">
+      <h1>Angelica Nylander</h1>
+      <h2 class="title">Frontend Developer</h2>
+    </div>
     
     <section>
       <h3 id="erfarenhet" class="heading">Arbetslivserfarenhet</h3>
@@ -288,21 +291,25 @@
   </main>
   
   <footer data-aos="fade-up">
-    <a href="tel:+46732096320">
+    <a href="tel:+46732096320" target="_blank" aria-label="Ring mig på telefonnummer 0732 09 63 20">
       <img src="img/phone-fill.png" alt="Telefon">
       <span class="tooltip">Ring mig på 0732-09 63 20</span>
     </a>
-    <a href="mailto:angelica.nylander@medieinstitutet.se">
+    <a href="mailto:angelica.nylander@outlook.com" aria-label="Skicka e-post till mig">
       <img src="img/mail-open-fill.png" alt="E-post">
       <span class="tooltip">Skicka e-post</span>
     </a>
-    <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank">
+    <a href="https://www.linkedin.com/in/angelica-nylander-bb894b30/" target="_blank" aria-label="Besök min LinkedIn-profil">
       <img src="img/linkedin-box-fill.png" alt="LinkedIn">
       <span class="tooltip">Besök min LinkedIn</span>
     </a>
-    <a href="https://github.com/angien90" target="_blank">
+    <a href="https://github.com/angien90" target="_blank" aria-label="Besök min GitHub-profil">
       <img src="img/github-fill.png" alt="GitHub">
       <span class="tooltip">Besök min GitHub</span>
+    </a>
+    <a href="https://angien90.github.io/Portfolio/" target="_blank" aria-label="Mina utvalda projekt">
+        <img class="icon" src="img/portfolio.png" alt="Portfolio">
+        <span class="tooltip">Mina portfolio</span>
     </a>
   </footer>
   

@@ -1,14 +1,16 @@
-body {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'El Messiri', sans-serif;
   display: flex; 
   flex-direction: column;
   min-height: 100vh; 
   margin: 0;
   transition: background-color 0.5s, color 0.5s; 
-  }
-  
-  /* Mörkt & ljust läge */
-  body.light-mode .navbar,
+}
+
+/* Mörkt & ljust läge */
+  body.light-mode header,
   body.light-mode .nav-links.active {
     background: #f4f4f4;
     color: black;
@@ -25,13 +27,19 @@ body {
   }
 
   body.light-mode h1, 
-  body.light-mode h2 {
-  background: linear-gradient(90deg, #D12A00, #feb47b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  body.light-mode h2,
+  body.light-mode h3 {
+    background: linear-gradient(90deg, #B35229, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  body.dark-mode .navbar {
+  body.light-mode .nav-links a {
+    color: #cb7547;
+  }
+
+  body.dark-mode header,
+  body.dark-mode .nav-links.active {
     background: #333;
     color: white;
   }
@@ -42,26 +50,25 @@ body {
   }
   
   body.dark-mode main {
-      background: #333;
-      color: white;
-  }
-
-  body.dark-mode h1, 
-  body.dark-mode h2 {
-  background: linear-gradient(90deg, #ff7e5f, #feb47b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  }
-  
-  body.dark-mode .navbar,
-  body.light-mode .nav-links.active {
     background: #333;
     color: white;
+}
+
+  body.dark-mode h1, 
+  body.dark-mode h2, 
+  body.dark-mode h3 {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-   body.dark-mode footer {
+  body.dark-mode .nav-links a {
+    color: #ff956b;
+  }
+
+  body.dark-mode footer {
     background: #333;
-      color: white;
+    color: white;
   }
   
   body.light-mode a img {
@@ -72,11 +79,12 @@ body {
     filter: invert(100%);
   }
   
+  /* Toogle funktion */
   .theme-switch-wrapper {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 20px;
-    z-index: 10;
+    z-index: 1000;
   }
   
   .theme-switch {
@@ -155,13 +163,15 @@ header {
     align-items: center;
     width: 100%;
     position: relative;
+    border-bottom: 10px double white;
+    height: 75px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     position: relative;
     width: 100%;
 }
@@ -176,30 +186,39 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    z-index: 1001;
+    z-index: 999;
 }
 
-/* När hamburgermenyn är aktiv */
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
 .nav-links.active {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     height: 100vh;
+    overflow-x: hidden;
     top: 0px;
     z-index: 999;
     padding-top: 80px;
+    padding-left: 0;
+    text-transform: uppercase;
 }
 
 /* --- Mobilanpassning (hamburgermeny) --- */
 .hamburger {
     display: block; 
-    font-size: 30px;
+    font-size: 40px;
     background: none;
     border: none;
-    color: #ff7e5f;
+    color: #cb7547;
     cursor: pointer;
     z-index: 1000;
-    padding: 10px;
+    padding-left: 20px;
     margin-top: 5px;
     border-radius: 5px; 
 }
@@ -207,15 +226,6 @@ header {
 .hamburger.active {
     transform: rotate(90deg);
 }
-
-/* Stil för länkar */
-.nav-links a {
-    text-decoration: none;
-    color: #ff7e5f;
-    font-weight: bold;
-    transition: color 0.2s ease-in-out;
-}
-
 
 /* Timeline för arbetslivserfarenhet */
 .timeline {
@@ -304,12 +314,10 @@ aside {
   padding: 10px; 
   border-right: 4px solid white;
   border-left: 4px solid white;
-  border-top: 4px solid white;
   border-bottom: 10px double white;
-  flex: 1;
 }
 
-aside img {
+.profilepicture {
   width: 50%;
   max-width: 200px;
   border-radius: 50%;
@@ -318,11 +326,30 @@ aside img {
   border: 4px solid #ddd;
 }
 
+.mobile-heading {
+  display: block;
+}
+
+.desktop-heading {
+  display: none;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 1.9em;
+}
+
+aside h1 {
+  margin-top: 60px;
+  margin-bottom: 10px; 
+  font-size: 2.5em;
+  text-align: center;
+}
+
 aside h2 {
   text-align: center;
-  margin-bottom: 20px;
   margin-top: 50px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 aside h3 {
@@ -357,59 +384,19 @@ ul li {
 }
 
 .reference {
-  width: 100%;
   text-align: center; 
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   font-weight: bold;
-  margin-top: 40px;
-  font-size: 1.2em;
+  margin-top: 80px;
+  font-size: 1.5em;
 }
 
 aside a {
   text-decoration: none;
 }
 
-aside button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px; 
-  background-color: #EF8450;
-  border: none; 
-  border-radius: 5px; 
-  color: #333;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  transition: background-color 0.3s ease; 
-}
-
-aside button:hover {
-  background-color: #EF8450;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  justify-content: center; 
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-
-.buttons button {
-  margin: 0 30px; 
-}
-
-button {
-width: 150px;
-}
-
 /* Innehåll i main (högerpanelen) */
 main {
-  position: relative;
-  flex-grow: 1;
   background-color: #e0e0e0; 
   padding: 10px; 
   padding-left: 10px;
@@ -421,13 +408,6 @@ main {
   flex: 1;
 }
 
-main h1 {
-  margin-top: 60px;
-  margin-bottom: 10px; 
-  font-size: 2.5em;
-  text-align: center;
-}
-
 main h2 {
   margin-top: 0px;
   font-size: 2em;
@@ -437,7 +417,7 @@ main h2 {
 main h3 {
   margin-bottom: 0px;
   margin-top: 40px;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -467,7 +447,6 @@ main p {
 /* Footer */
 footer {
   position: relative;
-  display: flex;
   justify-content: space-evenly;  
   align-items: flex-end;         
   padding: 0px;

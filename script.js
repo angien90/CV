@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Toggla navigeringstyp beroende på skärm
   const hamburgerBtn = document.getElementById("hamburger-btn");
   const navLinks = document.querySelector(".nav-links");
+  const navLinkItems = document.querySelectorAll(".nav-links a");
+
 
   if (hamburgerBtn && navLinks) {
     hamburgerBtn.addEventListener("click", function () {
@@ -56,4 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
       this.classList.toggle("active");
       this.textContent = this.classList.contains("active") ? "✖" : "☰";
     });
+
+    navLinkItems.forEach((link) => {
+    link.addEventListener("click", function () {
+      navLinks.classList.remove("active");
+      hamburgerBtn.classList.remove("active");
+      hamburgerBtn.textContent = "☰";
+    });
+  });
   }
