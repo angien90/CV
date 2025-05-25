@@ -1,17 +1,57 @@
 body {
   flex-direction: row;
 }
-  
+
+/* Header */
+header {
+  position: absolute;
+  z-index: 1000;
+}
+
+.hamburger {
+    display: none; 
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;;
+    margin: 0;
+    top: 25px;
+    list-style: none; 
+    text-transform: uppercase; 
+    gap: 0;
+    width: 95%;
+}
+
+.nav-links a {
+  font-size: 1.2em;
+}
+
+nav ul {
+    font-size: 1.2em; 
+}
+
+[id]::before {
+  content: "";
+  display: block;
+  height: 50px;
+  visibility: hidden;
+}
+
+/* Aside */
 aside {
-  width: 30%;  
+  width: 40%;  
   border-right: 10px double white;
   box-sizing: border-box;
+  margin-top: 80px;
   margin-bottom: 60px;
 }
-  
-aside h2 {
+
+.profilepicture {
   margin-top: 50px;
-  font-size: 2em;
+  margin-bottom: 80px;
 }
   
 aside p {
@@ -19,7 +59,16 @@ aside p {
   padding-right: 20px;
   font-size: 1.2em;
 }
-  
+
+.mobile-heading {
+  display: none;
+}
+
+.desktop-heading {
+  display: block;
+}
+
+
 ul li {
   font-size: 1.2em;
 }
@@ -33,6 +82,7 @@ aside button {
   width: 200px;
 }
 
+/* Main */
 main {  
   width: 400px;
   border-top: 4px solid white;
@@ -41,20 +91,22 @@ main {
   padding-left: 40px;
   padding-right: 40px;
 }
-  
+
 main h1 {
+  font-size: 2.5em;
+  text-align: center;
   margin-bottom: 0px; 
+  margin-top: 180px;
   font-size: 3em;
 }
   
 main h2 {
-  margin-top: 5px;
   font-size: 2.5em;
 }
   
 main h3 {
   font-size: 2em;
-  margin-top: 80px;
+  margin-top: 0;
 }
   
 main h4 {
@@ -70,7 +122,8 @@ main p {
 .timeline-item {
   padding: 0 40px;
 }
-  
+ 
+/* Footer */
 footer {
   align-items: flex-end;          
   height: 50px;                 
