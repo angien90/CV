@@ -82,6 +82,7 @@ html, body {
   body.dark-mode footer {
     background: #333;
     color: white;
+    position: fixed;
   }
 
   body.dark-mode a img {
@@ -469,6 +470,7 @@ footer {
   display: block;
   text-align: center;
   padding-top: 10px;
+  z-index: 9999;
 }
 
 footer a {

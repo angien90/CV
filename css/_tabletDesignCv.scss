@@ -9,7 +9,7 @@ header {
 }
 
 .hamburger {
-    display: none; 
+    display: none;
 }
 
 .nav-links {
@@ -19,8 +19,8 @@ header {
     padding: 0;;
     margin: 0;
     top: 25px;
-    list-style: none; 
-    text-transform: uppercase; 
+    list-style: none;
+    text-transform: uppercase;
     gap: 0;
     width: 95%;
 }
@@ -30,19 +30,19 @@ header {
 }
 
 nav ul {
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
 
-[id]::before {
-  content: "";
-  display: block;
-  height: 50px;
-  visibility: hidden;
+main section[id]::before {
+    content: "";
+    display: block;
+    height: 80px;
+    visibility: hidden;
 }
 
 /* Aside */
 aside {
-  width: 40%;  
+  width: 40%;
   border-right: 10px double white;
   box-sizing: border-box;
   margin-top: 80px;
@@ -57,7 +57,7 @@ aside {
 aside h2 {
   margin-top: 0;
 }
-  
+
 aside p {
   padding-left: 20px;
   padding-right: 20px;
@@ -87,7 +87,7 @@ aside button {
 }
 
 /* Main */
-main {  
+main {
   width: 400px;
   border-top: 4px solid white;
   margin-bottom: 70px;
@@ -99,25 +99,25 @@ main {
 main h1 {
   font-size: 2.5em;
   text-align: center;
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
   margin-top: 180px;
   font-size: 3em;
 }
-  
+
 main h2 {
   font-size: 2.5em;
 }
-  
+
 main h3 {
   font-size: 2em;
   margin-top: 0;
 }
-  
+
 main h4 {
   font-size: 1.2em;
   hyphens: none;
 }
-  
+
 main p {
   font-size: 1.2em;
   hyphens: none;
@@ -126,14 +126,14 @@ main p {
 .timeline-item {
   padding: 0 40px;
 }
- 
+
 /* Footer */
 footer {
-  align-items: flex-end;          
-  height: 50px;                 
+  align-items: flex-end;
+  height: 50px;
 }
-  
+
 footer img {
   margin-left: 40px;
-  margin-right: 40px;                  
+  margin-right: 40px;
 }
